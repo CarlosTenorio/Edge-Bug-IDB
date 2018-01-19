@@ -1,3 +1,31 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+    <h2>Reproduce Edge Bug - Blob Images on IDB</h2>
+    <h4>{{ name }}</h4>
+  </div>
+
+  <div>
+    <label for="load-file1">Load file 1:</label>
+    <input type="file" id="load-file1">
+  </div>
+  <button (click)="saveImage('Nicolas', 'load-file1')">Save on IDB 1</button>
+
+  <br>
+  <br>
+  <div>
+    <label for="file-type">File type: </label>
+    <input type="text" id="file-type" value="image/png">
+  </div>
+  <br>
+  <br>
+  <button (click)="setImage(0)">Image 1</button>
+  <button (click)="setImage(1)">Image 2</button>
+  <button (click)="setImage(2)">Image 3</button>
+
+  <br>
+  <br>
+  <button (click)="deleteDB(3)">DELETE PERSON TABLE IDB</button>
+  <br>
+  <br>
+
+  <h3>{{ namePerson }}</h3>
+  <img *ngIf="picture!=null" [src]="picture" />
