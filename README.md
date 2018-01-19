@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.5.
 
+BUG: when you have on the Index DB storage images (Blobs) nested on other objects Edge and IE11 fails when you try show the image.
+The same project works fine on Google Chrome and Firefox.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
